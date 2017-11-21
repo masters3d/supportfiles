@@ -11,3 +11,9 @@ https://kevinbecker.org/blog/2012/09/17/reverse-scrolling-on-windows-8
 - Windows does not have elastic scrolling so even that setting will feel weird because the mouse will stop scrolling right away when you let go.
 - Reverse scrolling using this: https://github.com/jamie-pate/flipflop-windows-wheel
 
+# Map the windows key to CRL
+- https://www.howtogeek.com/howto/windows-vista/map-any-key-to-any-key-on-windows-xp-vista/
+
+
+
+
