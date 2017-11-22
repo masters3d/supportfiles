@@ -14,6 +14,19 @@ https://kevinbecker.org/blog/2012/09/17/reverse-scrolling-on-windows-8
 # Map the windows key to CRL
 - https://www.howtogeek.com/howto/windows-vista/map-any-key-to-any-key-on-windows-xp-vista/
 
+# Git Command Prompt
+
+Add this to the .bashrc or .bash_profile
+
+```
+# This should add the git. Change the mbp to you the name of the urrent laptop.
+GIT_PS1_SHOWDIRTYSTATE=true
+export PS1='[\u@mbp \W$(__git_ps1)]\$ '
+
+# This will print the current directory witht he correct scapes.
+alias cwd='printf "%q\n" "$(pwd)"'
+```
+
 
 
 
