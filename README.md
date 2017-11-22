@@ -21,7 +21,7 @@ Add this to the .bashrc or .bash_profile
 ```
 # Git command prompt
 GIT_PS1_SHOWDIRTYSTATE=true
-export PS1='[${debian_chroot:+($debian_chroot)} \W$(__git_ps1)]\$ '
+export PS1='[$USER@$(hostname) \W$(__git_ps1)]\$ '
 
 # This will print the current directory with the correct scapes when there are spaces in the path.
 alias cwd='printf "%q\n" "$(pwd)"'
