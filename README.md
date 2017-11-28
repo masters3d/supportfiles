@@ -14,6 +14,15 @@ https://kevinbecker.org/blog/2012/09/17/reverse-scrolling-on-windows-8
 # Map the windows key to CRL
 - https://www.howtogeek.com/howto/windows-vista/map-any-key-to-any-key-on-windows-xp-vista/
 
+# Git Settings
+This fixes the line ending so you can use the git from inside bash ubuntu in windows.
+`git config --global core.autocrlf true`
+
+You can use the same credentials from windows inside ubuntu
+ https://stackoverflow.com/a/47350274/3705470  
+ ``git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/libexec/git-core/git-credential-wincred.exe"``  
+
+
 # Git Command Prompt
 
 Add this to the .bashrc or .bash_profile
