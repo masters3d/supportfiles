@@ -34,6 +34,9 @@ export PS1='[$USER@$(hostname) \W$(__git_ps1)]\$ '
 
 # This will print the current directory with the correct scapes when there are spaces in the path.
 alias cwd='printf "%q\n" "$(pwd)"'
+
+# add a way to change paths from windows to unix. This uses the tooling inside Git for windows.
+alias cygpath="/mnt/c/Program\ Files/Git/usr/bin/cygpath.exe"
 ```
 
 
