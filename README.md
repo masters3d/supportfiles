@@ -38,6 +38,10 @@ alias cwd='printf "%q\n" "$(pwd)"'
 # add a way to change paths from windows to unix. This uses the tooling inside Git for windows.
 # http://www.mingw.org/wiki/Posix_path_conversion
 alias cygpath="/mnt/c/Program\ Files/Git/usr/bin/cygpath.exe"
+
+#Add default start up dir. This will make sure that you start in a windows dir location.
+# Add your user name or the place where you keep all your local repos.
+cd /mnt/c/Users/
 ```
 
 
