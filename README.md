@@ -36,6 +36,7 @@ export PS1='[$USER@$(hostname) \W$(__git_ps1)]\$ '
 alias cwd='printf "%q\n" "$(pwd)"'
 
 # add a way to change paths from windows to unix. This uses the tooling inside Git for windows.
+# http://www.mingw.org/wiki/Posix_path_conversion
 alias cygpath="/mnt/c/Program\ Files/Git/usr/bin/cygpath.exe"
 ```
 
