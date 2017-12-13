@@ -22,6 +22,12 @@ You can use the same credentials from windows inside ubuntu
  https://stackoverflow.com/a/47350274/3705470  
  ``git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/libexec/git-core/git-credential-wincred.exe"``  
 
+# Shortcuts
+- You can set the snipping tool to act just like the screenshot tool in mac
+https://www.quora.com/How-do-I-launch-Snipping-tool-in-Windows-and-the-actual-new-snip-command-simultaneously
+
+- I have also tried which does an excelent job at mapping thing like Command + H to hide windows. ETC. 
+- https://inchwest.com/hotkeycontrol/#mapkeyboard
 
 # Git Command Prompt
 
