@@ -51,6 +51,9 @@ alias cygpath="/mnt/c/Program\ Files/Git/usr/bin/cygpath.exe"
 #Add default start up dir. This will make sure that you start in a windows dir location.
 # Add your user name or the place where you keep all your local repos.
 cd /mnt/c/Users/
+
+# emulate open from mac
+alias open=explorer.exe
 ```
 
 
