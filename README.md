@@ -56,6 +56,8 @@ cd /mnt/c/Users/
 alias open=explorer.exe
 ```
 
-
+# WSL  
+``wslpath to do WSL<->Windows path conversions.``
+https://docs.microsoft.com/en-us/windows/wsl/release-notes#build-17063
 
 
