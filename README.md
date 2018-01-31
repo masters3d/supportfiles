@@ -60,4 +60,4 @@ alias open=explorer.exe
 ``wslpath to do WSL<->Windows path conversions.``
 https://docs.microsoft.com/en-us/windows/wsl/release-notes#build-17063
 
-
+`wslconfig.exe /list` This will show all the current installed distributions.  
