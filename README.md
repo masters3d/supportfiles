@@ -24,6 +24,15 @@ This fixes the line ending so you can use the git from inside bash ubuntu in win
 You can use the same credentials from windows inside ubuntu
  https://stackoverflow.com/a/47350274/3705470  
  ``git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/libexec/git-core/git-credential-wincred.exe"``  
+ 
+ Add name and email
+ 
+ `git config --global user.name "Cheyo Jimenez"`   
+ `git config --global user.email johndoe@example.com`  
+https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup
+
+Edit the global settings:  
+`git config --edit --global`
 
 # Shortcuts
 - You can set the snipping tool to act just like the screenshot tool in mac
