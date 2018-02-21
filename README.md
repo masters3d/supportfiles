@@ -34,6 +34,9 @@ https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup
 Edit the global settings:  
 `git config --edit --global`
 
+Edit the default git editor.
+`git config --global core.editor "code --wait"`
+
 # Shortcuts
 - You can set the snipping tool to act just like the screenshot tool in mac
 https://www.quora.com/How-do-I-launch-Snipping-tool-in-Windows-and-the-actual-new-snip-command-simultaneously
