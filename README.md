@@ -49,6 +49,10 @@ https://www.quora.com/How-do-I-launch-Snipping-tool-in-Windows-and-the-actual-ne
 Add this to the .bashrc or .bash_profile
 
 ```
+# Default editor
+export EDITOR='code --wait'
+export VISUAL='code --wait'
+
 # Git command prompt
 GIT_PS1_SHOWDIRTYSTATE=true
 export PS1='[$USER@$(hostname) \W$(__git_ps1)]\$ '
