@@ -46,6 +46,11 @@ https://www.quora.com/How-do-I-launch-Snipping-tool-in-Windows-and-the-actual-ne
 
 # Git Command Prompt
 
+VS Code has its own command promt that can be more userfriendly that the build in windows ones. 
+You should map the windows git bash command prompt to be used inside the vs code command prompt. 
+This allows copy and paste among other nice things. 
+
+
 Add this to the .bashrc or .bash_profile
 
 ```
