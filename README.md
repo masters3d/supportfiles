@@ -17,6 +17,13 @@ https://kevinbecker.org/blog/2012/09/17/reverse-scrolling-on-windows-8
 # Map the windows key to CRL
 - https://www.howtogeek.com/howto/windows-vista/map-any-key-to-any-key-on-windows-xp-vista/
 
+# Mapping CapsLock to something more useful
+- http://vim.wikia.com/wiki/Map_caps_lock_to_escape_in_Windows
+- Mapping LAlt, LWin to RCtrl, LCtrl is the best thing that I could come up with so  
+ I dont have to think about when it switch from a Mac keyboard to a Windows layout.  
+ The problem with this approach is that I do not have an ALT on the left side.  
+ Using AutoHotkey we should be able to map Capslock to act as Escape when used alone or alt when used with other modifiers. 
+
 # Git Settings
 This fixes the line ending so you can use the git from inside bash ubuntu in windows.
 `git config --global core.autocrlf true`
