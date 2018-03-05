@@ -1,6 +1,7 @@
 ; Originaly found here:
 ;https://autohotkey.com/boards/viewtopic.php?t=12423
 ;Edited
+; ! = ALT ; ^ = CTRL ; + = SHIFT ; # = WIN
 
 ; Left Alt and Left Windows are mapped to Left Control and Right Control
 ; Capslock was mapped to Left Alt. 
@@ -20,7 +21,9 @@ Ctrl & `::Send {Shift down}{LCtrl down}{Tab}{LCtrl up}{Shift up}
 #if
 
 ; open Windows start with shortcut for Finder
-Ctrl & Space::Send {RCtrl up}{LWin}
+Ctrl & Space::
+    Send #s
+    return
 
 ;Command-backspace deletes whole line
 Ctrl & BS::Send {LShift down}{Home}{LShift Up}{Del}
@@ -36,15 +39,15 @@ Ctrl & h::WinMinimize,a
 ; Snapshots
 +^4::Run %windir%\system32\SnippingTool.exe /clip
 +^3::
-If (WinExist("Snipping Tool"))
-{
-	WinActivate
-    Send !{n}
-}
-else 
-{
-	Run %windir%\system32\SnippingTool.exe
-    WinWait,"Snipping Tool",,1
-	Send !{n}
-}
-return
+    If (WinExist("Snipping Tool"))
+    {
+        WinActivate
+        Send !{n}
+    }
+    else 
+    {
+        Run %windir%\system32\SnippingTool.exe
+        WinWait,"Snipping Tool",,1
+        Send !{n}
+    }
+    return
