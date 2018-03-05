@@ -32,3 +32,19 @@ Alt & BS::Send {LShift down}{LCtrl down}{Left}{LShift Up}{Lctrl up}{Del}
 Ctrl & w::Send ^{F4}
 Ctrl & q::Send !{F4}
 Ctrl & h::WinMinimize,a
+
+; Snapshots
++^4::Run %windir%\system32\SnippingTool.exe /clip
++^3::
+If (WinExist("Snipping Tool"))
+{
+	WinActivate
+    Send !{n}
+}
+else 
+{
+	Run %windir%\system32\SnippingTool.exe
+    WinWait,"Snipping Tool",,1
+	Send !{n}
+}
+return
