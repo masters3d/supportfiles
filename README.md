@@ -23,6 +23,9 @@ https://kevinbecker.org/blog/2012/09/17/reverse-scrolling-on-windows-8
  I dont have to think about when it switch from a Mac keyboard to a Windows layout.  
  The problem with this approach is that I do not have an ALT on the left side.  
  Using AutoHotkey we should be able to map Capslock to act as Escape when used alone or alt when used with other modifiers. 
+# How to enable the F key (fkeys) in a the magic keyboard without bootcamp.
+Flip this bit to zero so you do not have to use the fn keys. 
+
 
 # Git Settings
 This fixes the line ending so you can use the git from inside bash ubuntu in windows.
