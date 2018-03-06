@@ -48,6 +48,10 @@ Ctrl & BS::Send {LShift down}{Home}{LShift Up}{Del}
 ;alt-delete deletes previous word
 Alt & BS::Send {LShift down}{LCtrl down}{Left}{LShift Up}{Lctrl up}{Del}
 
+;Toggle Max/Min Window
+;This can also be mapped in Mac https://apple.stackexchange.com/a/230367
+Ctrl & Enter::Send {F11}
+
 ;Closing open tab
 Ctrl & w::Send ^{F4}
 
