@@ -39,6 +39,7 @@ and set the value for “OSXFnBehavior” to 0
 Complete instructions here: http://1428systems.com/uncategorized/making-apple-aluminum-keyboard-work-under-windows/
 
 ![](keyboard-support-fn.jpg)
+![](keyboard-support-keymagic.jpg)
 
 You can also find out how to edit your settings for the track pad here: https://superuser.com/questions/172658/anyone-know-how-to-modify-settings-for-the-apple-magic-trackpad-on-windows-with
 
