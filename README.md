@@ -23,6 +23,27 @@ https://kevinbecker.org/blog/2012/09/17/reverse-scrolling-on-windows-8
  I dont have to think about when it switch from a Mac keyboard to a Windows layout.  
  The problem with this approach is that I do not have an ALT on the left side.  
  Using AutoHotkey we should be able to map Capslock to act as Escape when used alone or alt when used with other modifiers. 
+ 
+# How to enable the F key (fkeys) in a the magic keyboard without bootcamp.
+```
+HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\KeyMagic\
+
+and set the value for “OSXFnBehavior” to 0
+
+ALSO, Navigate to;
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\KeyMagic\
+
+and set the value for “OSXFnBehavior” to 0
+```
+Complete instructions here: http://1428systems.com/uncategorized/making-apple-aluminum-keyboard-work-under-windows/
+
+![](keyboard-support-fn.jpg)
+![](keyboard-support-keymagic.jpg)
+
+You can also find out how to edit your settings for the track pad here: https://superuser.com/questions/172658/anyone-know-how-to-modify-settings-for-the-apple-magic-trackpad-on-windows-with
+
+
 
 # Git Settings
 This fixes the line ending so you can use the git from inside bash ubuntu in windows.
