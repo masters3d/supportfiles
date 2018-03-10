@@ -53,7 +53,10 @@ Alt & BS::Send {LShift down}{LCtrl down}{Left}{LShift Up}{Lctrl up}{Del}
 Ctrl & Enter::Send {F11}
 
 ;Closing open tab
-Ctrl & w::Send ^{F4}
+Ctrl & w::
+    Send ^{F4}
+    Send {Control up} ; workaround for sticky control
+    return
 
 ; Hide the program
 Ctrl & h::WinMinimize,a
