@@ -1,6 +1,10 @@
 # supportfiles
 Support files I need to run my peripherals under windows
 
+## Windows Keyboard shortcuts for VSCode and Visual Studio
+- SHIFT + DELETE : Deletes the whole line. 
+- CONTROL + BACKSPACE : Deletes all characters before cursor.
+- CONTROL + DELETE : Deletes all characters after the cursor.
 
 ## Closing windows on the left side:
 - Turns out you are able to close windows by double clicking on the left side of a window. You can also open a quick menu by hitting `alt + space` then you can use the x, n to close or minimize. More infor [here](https://ux.stackexchange.com/questions/55260/whats-the-point-of-closing-windows-by-double-clicking-their-top-left?newreg=257696e490004174894f6e176940194e)
