@@ -1,3 +1,6 @@
+; Save as UTF8-BOM !!!!
+
+; UTF-8 will no render the special character correctly
 ; Originally found here:
 ;https://autohotkey.com/boards/viewtopic.php?t=12423
 ;Edited
@@ -28,8 +31,22 @@
 SetTitleMatchMode 2
 SendMode Input
 
+
+; Get some sticky keys unstuck
+#If GetKeyState("WindowsKey", "D")
+#Escape:: 
+    Send {WindowsKey up} ; workaround for sticky win
+    return
+#if
+
+
 Ctrl & Tab:: AltTab
-Ctrl & `::Send {LCtrl down}{Tab}{LCtrl up}
+
+#If GetKeyState("Control", "D")
+Ctrl & `::
+    Send {LCtrl down}{Tab}{LCtrl up}
+    return
+#if
 
 #If GetKeyState("Shift", "D")
 ; Tab back with special key below ESC
@@ -88,4 +105,34 @@ Ctrl & q::
         Send {AltUp} ; workaround for sticky alt
     }
     return
-    
+
+
+#UseHook
+; Save as UTF8-BOM
+;https://autohotkey.com/board/topic/27801-special-characters-osx-style/
+diacritic(map) {
+    keyMap := "aeiounyAEIOUNY"
+    Input c, I L1 T2, {LCtrl}{RCtrl}{LAlt}{RAlt}{LWin}{RWin}
+    if (ErrorLevel != "Max")
+    {
+        return
+    }
+    ; get index from key map
+    i := InStr(keyMap, c, true)
+    ;MsgBox, % i
+    if ( i > 0) ; 1 based index
+    {
+        c := SubStr(map, i, 1)
+    }
+    SendInput %c%
+}
+
+!e::diacritic("áéíóúnýÁÉÍÓÚNÝ")
+
+!u::diacritic("äëïöünÿÄËÏÖÜNŸ")
+
+!n::diacritic("ãeiõuñỹÃEIÕUÑỸ")
+
+!+/:: Send ¿
+!+1:: Send ¡
+!1:: Send ¡
