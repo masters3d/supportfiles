@@ -46,6 +46,10 @@ Ctrl & Tab:: AltTab
 Ctrl & `::
     Send {LCtrl down}{Tab}{LCtrl up}
     return
+
+^Escape:: 
+    Send {Control up} ; workaround for sticky control
+    return
 #if
 
 #If GetKeyState("Shift", "D")
@@ -103,10 +107,17 @@ Ctrl & q::
 ; This forced both left and right controls to be pressed. 
 ; This emulates the copy to pasteboard functionally of mac since I am using control as command in windows. 
 ; All command + control mac shortcut get mapped to requiring left and right command.
-; Does not seem to work when more than 3 keys are required.  
+; This is faster than the windows 10 `win + shift + s` for some reason
 <^>^+4::Run %windir%\system32\SnippingTool.exe /clip
 
-; Not exactly as macos since this is full screen capture in macos
+; Does not seem to work when more than 3 keys are required. So this is a hack to to force it to pick the above one
+; Plus I could not figure out a way to take a screenshot and save the screenshot to the desktop
+^+4:: return
+
+; non op when using both controls or Command + control in mac
+<^>^+3::return
+
+; Not exactly as macos since this is full screen capture in macos but close enough as it doesn't save to memory
 +^3::
     If (WinExist("Snipping Tool"))
     {
@@ -122,7 +133,6 @@ Ctrl & q::
         Send {AltUp} ; workaround for sticky alt
     }
     return
-
 
 #UseHook
 ; Save as UTF8-BOM
