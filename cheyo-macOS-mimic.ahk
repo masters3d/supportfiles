@@ -59,6 +59,14 @@ Ctrl & Space::
     Send {WindowsKey up} ; workaround for sticky win
     return
 
+; emoji shortcut
+; change on the mac to match https://apple.stackexchange.com/a/230387
+Ctrl & .::
+    Send #.
+    Send {WindowsKey up} ; workaround for sticky win
+    return
+
+
 ;Command-backspace deletes whole line
 Ctrl & BS::Send {LShift down}{Home}{LShift Up}{Del}
 
@@ -72,14 +80,17 @@ Ctrl & Enter::
     Send {Control up} ; workaround for sticky control
     return
 
+; Win Maximize. Different from full screen. Cant be hyst
+<^>^f:: WinMaximize,a
+
+; Hide the program
+Ctrl & h::WinMinimize,a
+
 ;Closing open tab
 Ctrl & w::
     Send ^{F4}
     Send {Control up} ; workaround for sticky control
     return
-
-; Hide the program
-Ctrl & h::WinMinimize,a
 
 ; Quit a program
 ; TODO: It would be cool to make it ask if I am sure about closing a program like in Chrome
@@ -89,7 +100,13 @@ Ctrl & q::
     return
 
 ; Snapshots
-+^4::Run %windir%\system32\SnippingTool.exe /clip
+; This forced both left and right controls to be pressed. 
+; This emulates the copy to pasteboard functionally of mac since I am using control as command in windows. 
+; All command + control mac shortcut get mapped to requiring left and right command.
+; Does not seem to work when more than 3 keys are required.  
+<^>^+4::Run %windir%\system32\SnippingTool.exe /clip
+
+; Not exactly as macos since this is full screen capture in macos
 +^3::
     If (WinExist("Snipping Tool"))
     {
@@ -136,3 +153,6 @@ diacritic(map) {
 !+/:: Send ¿
 !+1:: Send ¡
 !1:: Send ¡
+
+
+
