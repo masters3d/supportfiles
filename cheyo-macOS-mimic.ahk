@@ -165,4 +165,8 @@ diacritic(map) {
 !1:: Send ¡
 
 
-
+; Chéyo's Personal Preference. Due to the way the layout is in my Sculpt keyboard I am always hitting these keys in error
+Delete::Send {BackSpace}
+Insert::Send {Enter}
+PgDn:: Send {} ; Disable, Perhaps I could enable when I am using an external keyboard
+PgUp:: Send {} ; Disable, Bad placement on laptop. 
