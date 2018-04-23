@@ -33,11 +33,15 @@ SendMode Input
 
 
 ; Get some sticky keys unstuck
-#If GetKeyState("WindowsKey", "D")
 #Escape:: 
-    Send {WindowsKey up} ; workaround for sticky win
+    Send {LWinUp}{RWinUp} ; workaround for sticky win
+    MsgBox, "WinKeyUp"
     return
-#if
+
+^Escape:: 
+    Send {Control up} ; workaround for sticky control
+    MsgBox, "CrlKeyUp"
+    return
 
 
 Ctrl & Tab:: AltTab
@@ -47,9 +51,6 @@ Ctrl & `::
     Send {LCtrl down}{Tab}{LCtrl up}
     return
 
-^Escape:: 
-    Send {Control up} ; workaround for sticky control
-    return
 #if
 
 #If GetKeyState("Shift", "D")
@@ -60,14 +61,14 @@ Ctrl & `::Send {Shift down}{LCtrl down}{Tab}{LCtrl up}{Shift up}
 ; open Windows start on search similar to the finder in mac
 Ctrl & Space::
     Send #s
-    Send {WindowsKey up} ; workaround for sticky win
+    Send {LWinUp}{RWinUp} ; workaround for sticky win
     return
 
 ; emoji shortcut
 ; change on the mac to match https://apple.stackexchange.com/a/230387
 Ctrl & .::
     Send #.
-    Send {WindowsKey up} ; workaround for sticky win
+    Send {LWinUp}{RWinUp} ; workaround for sticky win
     return
 
 
