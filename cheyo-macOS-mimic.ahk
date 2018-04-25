@@ -39,7 +39,7 @@ SendMode Input
     return
 
 ^Escape:: 
-    Send {Control up} ; workaround for sticky control
+    Send {Ctrl up} ; workaround for sticky control
     MsgBox, "CrlKeyUp"
     return
 
