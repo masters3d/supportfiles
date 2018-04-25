@@ -43,6 +43,10 @@ SendMode Input
     MsgBox, "CrlKeyUp"
     return
 
+!Escape:: 
+    Send {AltUp} ; workaround for sticky Alt
+    MsgBox, "AltKeyUp"
+    return
 
 Ctrl & Tab:: AltTab
 
