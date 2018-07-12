@@ -1,6 +1,14 @@
 # supportfiles
 Support files I need to run my peripherals under windows
 
+
+# Pairing the keyboard
+
+Turn on the keyboard.  
+Press and hold Command + w until the keyboard light begins blinking, indicating the keyboard is ready to pair.  
+Use Windows Bluetooth settings to pair the keyboard, entering the same code (e.g. 123456 Enter) on both ***internal and external keyboards.***  
+
+[Source](https://gist.github.com/mcandre/a1c6915d2e338fef6a42e54655d28062)
 ## Windows Keyboard shortcuts for VSCode and Visual Studio
 - SHIFT + DELETE : Deletes the whole line. 
 - CONTROL + BACKSPACE : Deletes all characters before cursor.
