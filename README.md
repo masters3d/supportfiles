@@ -21,6 +21,7 @@ Use Windows Bluetooth settings to pair the keyboard, entering the same code (e.g
 - Use the driver from bootcamp.  
 https://www.linickx.com/apple-magic-mouse---fixing-windows-10-scrolling  
 https://support.apple.com/en-am/HT204048  
+`Control Panel\Hardware and Sound\Devices and Printers`
 https://kevinbecker.org/blog/2012/09/17/reverse-scrolling-on-windows-8  
 - Change the "Choose how many lines to scroll each time" to 1.
 - Windows does not have elastic scrolling so even that setting will feel weird because the mouse will stop scrolling right away when you let go.
