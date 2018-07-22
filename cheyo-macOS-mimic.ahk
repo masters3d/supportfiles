@@ -34,17 +34,17 @@ SendMode Input
 
 ; Get some sticky keys unstuck
 #Escape:: 
-    Send {LWinUp}{RWinUp} ; workaround for sticky win
+    Send {LWinDown}{RWinDown}{LWinUp}{RWinUp} ; workaround for sticky win
     MsgBox, "WinKeyUp"
     return
 
 ^Escape:: 
-    Send {Ctrl up} ; workaround for sticky control
-    MsgBox, "CrlKeyUp"
+    Send {CtrlDown}{CtrlUp} ; workaround for sticky control
+    MsgBox, "CtrlKeyUp"
     return
 
 !Escape:: 
-    Send {AltUp} ; workaround for sticky Alt
+    Send {AltDown}{AltUp} ; workaround for sticky Alt
     MsgBox, "AltKeyUp"
     return
 
@@ -65,28 +65,22 @@ Ctrl & `::Send {Shift down}{LCtrl down}{Tab}{LCtrl up}{Shift up}
 ; open Windows start on search similar to the finder in mac
 Ctrl & Space::
     Send #s
-    Send {LWinUp}{RWinUp} ; workaround for sticky win
+    Send {LWinDown}{RWinDown}{LWinUp}{RWinUp}{CtrlDown}{CtrlUp}{AltDown}{AltUp} ; workaround for sticky win
     return
 
 ; emoji shortcut
 ; change on the mac to match https://apple.stackexchange.com/a/230387
 Ctrl & .::
     Send #.
-    Send {LWinUp}{RWinUp} ; workaround for sticky win
+    Send {LWinDown}{RWinDown}{LWinUp}{RWinUp}{CtrlDown}{CtrlUp}{AltDown}{AltUp} ; workaround for sticky win
     return
 
-
-;Command-backspace deletes whole line
-Ctrl & BS::Send {LShift down}{Home}{LShift Up}{Del}
-
-;alt-delete deletes previous word
-Alt & BS::Send {LShift down}{LCtrl down}{Left}{LShift Up}{Lctrl up}{Del}
 
 ;Toggle Max/Min Window
 ;This can also be mapped in Mac https://apple.stackexchange.com/a/230367
 Ctrl & Enter::
     Send {F11}
-    Send {Control up} ; workaround for sticky control
+    Send {CtrlDown}{CtrlUp} ; workaround for sticky control
     return
 
 ; Win Maximize. Different from full screen. Cant be hyst
@@ -98,14 +92,15 @@ Ctrl & h::WinMinimize,a
 ;Closing open tab
 Ctrl & w::
     Send ^{F4}
-    Send {Control up} ; workaround for sticky control
+    Send {CtrlDown}{CtrlUp} ; workaround for sticky control
     return
 
 ; Quit a program
 ; TODO: It would be cool to make it ask if I am sure about closing a program like in Chrome
 Ctrl & q::
     Send !{F4}
-    Send {AltUp} ; workaround for sticky alt
+    Send {AltDown}{AltUp} ; workaround for sticky alt
+    Send {CtrlDown}{CtrlUp} ; workaround for sticky control
     return
 
 ; Snapshots
@@ -128,15 +123,17 @@ Ctrl & q::
     {
         WinActivate
         Send !{n}
-        Send {AltUp} ; workaround for sticky alt
+        Send {AltDown}{AltUp} ; workaround for sticky alt
+        Send {CtrlDown}{CtrlUp} ; workaround for sticky control
     }
     else 
     {
         Run %windir%\system32\SnippingTool.exe
         WinWait,"Snipping Tool",,1
         Send !{n}
-        Send {AltUp} ; workaround for sticky alt
-    }
+        Send {AltDown}{AltUp} ; workaround for sticky alt
+        Send {CtrlDown}{CtrlUp} ; workaround for sticky control  
+     }
     return
 
 #UseHook
@@ -160,9 +157,7 @@ diacritic(map) {
 }
 
 !e::diacritic("áéíóúnýÁÉÍÓÚNÝ")
-
 !u::diacritic("äëïöünÿÄËÏÖÜNŸ")
-
 !n::diacritic("ãeiõuñỹÃEIÕUÑỸ")
 
 !+/:: Send ¿
@@ -171,7 +166,10 @@ diacritic(map) {
 
 
 ; Chéyo's Personal Preference. Due to the way the layout is in my Sculpt keyboard I am always hitting these keys in error
-Delete::Send {BackSpace}
+; Delete::Send {BackSpace}
+
+; This force to will delete a whole line 
+Alt & BackSpace:: Send +{Delete}
 Insert::Send {Enter}
 PgDn:: Send {} ; Disable, Perhaps I could enable when I am using an external keyboard
 PgUp:: Send {} ; Disable, Bad placement on laptop. 
