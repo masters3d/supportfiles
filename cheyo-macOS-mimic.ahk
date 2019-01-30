@@ -34,7 +34,7 @@ SendMode Input
 
 ; Get some sticky keys unstuck
 #Escape:: 
-    Send {LWinDown}{RWinDown}{LWinUp}{RWinUp} ; workaround for sticky win
+    Send {LWinDown}{LWinUp}{RWinDown}{RWinUp} ; workaround for sticky win
     MsgBox, "WinKeyUp"
     return
 
@@ -65,25 +65,18 @@ Ctrl & `::Send {Shift down}{LCtrl down}{Tab}{LCtrl up}{Shift up}
 ; open Windows start on search similar to the finder in mac
 Ctrl & Space::
     Send #s
-    Send {LWinDown}{RWinDown}{LWinUp}{RWinUp}{CtrlDown}{CtrlUp}{AltDown}{AltUp} ; workaround for sticky win
+    Send {LWinDown}{LWinUp}{RWinDown}{RWinUp}{CtrlDown}{CtrlUp}{AltDown}{AltUp} ; workaround for sticky win
     return
 
 ; emoji shortcut
 ; change on the mac to match https://apple.stackexchange.com/a/230387
 Ctrl & .::
     Send #.
-    Send {LWinDown}{RWinDown}{LWinUp}{RWinUp}{CtrlDown}{CtrlUp}{AltDown}{AltUp} ; workaround for sticky win
+    Send {LWinDown}{LWinUp}{RWinDown}{RWinUp}{CtrlDown}{CtrlUp}{AltDown}{AltUp} ; workaround for sticky win
     return
 
-
-;Toggle Max/Min Window
-;This can also be mapped in Mac https://apple.stackexchange.com/a/230367
-Ctrl & Enter::
-    Send {F11}
-    Send {CtrlDown}{CtrlUp} ; workaround for sticky control
-    return
-
-; Win Maximize. Different from full screen. Cant be hyst
+; Win Maximize. Different from full screen.
+; I tried full screen but could not figure out how to get our of full screen so I disabled it. 
 <^>^f:: WinMaximize,a
 
 ; Hide the program
@@ -163,6 +156,21 @@ diacritic(map) {
 !+/:: Send ¿
 !+1:: Send ¡
 !1:: Send ¡
+
+; Reverse the direction of the scroll for all devices
+; Source https://superuser.com/a/310694/835694
+#HotkeyInterval 1000
+#MaxHotkeysPerInterval 500
+
+$WheelUp::
+;Send {WheelDown 1.5}
+Send {WheelDown}
+Return
+
+$WheelDown::
+;Send {WheelUp 1.5}
+Send {WheelUp}
+Return
 
 
 ; Chéyo's Personal Preference. Due to the way the layout is in my Sculpt keyboard I am always hitting these keys in error
