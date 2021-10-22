@@ -27,6 +27,14 @@ https://kevinbecker.org/blog/2012/09/17/reverse-scrolling-on-windows-8
 - Windows does not have elastic scrolling so even that setting will feel weird because the mouse will stop scrolling right away when you let go.
 - Reverse scrolling using this: https://github.com/jamie-pate/flipflop-windows-wheel
 
+
+# Split keyboards
+
+I have been using the microsoft sculpt keyboard (semi-split) for since 2019 but I have deciced to start using a completly split keyboard at the end of 2021. I have the Kinesis Freestyle 2 for mac keyboard which I use in windows. The main issues I faced with the transition is that the special keys like left control or command keys are not lighned up with the letter X. The problem with this is that I have a mental muscle memory of using the distance from the command/control key to things like cut, paste, select all, etc. After using for about a week, I decided that I need to look into a diferent way to engage the control key so I am mapping the right shit to take over this responsbility. The hope is that I dont have to move my finger to the bottom row (expect for my thumb when pressing the space bar, and even when press the directional key -- I end moving mywhole hand which is okay. ) Idealy I should be able to map the left space bar to also be control but the system can not differenciate lefrt of right space bars (the new kinesis Freestyle pro is able to do this on hardware)
+
+## Warning
+Getting the `Scancode Map` wrong can prevent you from even logging into computer. Imagine you accidently map all control, alt, keys? I dont even know how this can be fixed. Be carefull with the below notes.
+
 # Map the windows key to CRL
 - https://www.howtogeek.com/howto/windows-vista/map-any-key-to-any-key-on-windows-xp-vista/
 
@@ -36,9 +44,6 @@ https://kevinbecker.org/blog/2012/09/17/reverse-scrolling-on-windows-8
  I dont have to think about when it switch from a Mac keyboard to a Windows layout.  
  The problem with this approach is that I do not have an ALT on the left side to address this problem I mapped capslock to be left alt which is very helpful in windows to switch windows. 
  
-# Split keyboards
-
-I have been using the microsoft sculpt keyboard (semi-split) for since 2019 but I have deciced to start using a completly split keyboard at the end of 2021. I have the Kinesis Freestyle 2 for mac keyboard which I use in windows. The main issues I faced with the transition is that the special keys like left control or command keys are not lighned up with the letter X. The problem with this is that I have a mental muscle memory of using the distance from the command/control key to things like cut, paste, select all, etc. After using for about a week, I decided that I need to look into a diferent way to engage the control key so I am mapping the right shit to take over this responsbility. The hope is that I dont have to move my finger to the bottom row (expect for my thumb when pressing the space bar, and even when press the directional key -- I end moving mywhole hand which is okay. ) Idealy I should be able to map the left space bar to also be control but the system can not differenciate lefrt of right space bars (the new kinesis Freestyle pro is able to do this on hardware)
 
 # Settings for Windows Sharp Keys app
 ![image](https://user-images.githubusercontent.com/6539412/138493208-10bb2936-07ed-4392-8a6a-4621ee494115.png)
