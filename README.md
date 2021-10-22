@@ -43,6 +43,30 @@ I have been using the microsoft sculpt keyboard (semi-split) for since 2019 but 
 # Settings for Windows Sharp Keys app
 ![image](https://user-images.githubusercontent.com/6539412/138482722-139063f4-cab9-48a5-9a00-957ebcd3e951.png)
 
+I should probably look in the code for Windows Sharp Keys but in essence the app interact with the following:
+
+Open Registry editor:
+`Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout`
+
+![image](https://user-images.githubusercontent.com/6539412/138485837-fe7ea7c7-4d1c-4203-acdd-f77694058ca8.png)
+
+This is how to we can get the contents of the binary file and convert it to the text below
+
+```ps
+$keyboard_layout = Get-ItemProperty -Path 'HKLM:\\SYSTEM\CurrentControlSet\Control\Keyboard Layout'
+$keyboard_layout_base64string = [convert]::ToBase64String($keyboard_layout.'Scancode Map')
+$keyboard_layout_base64string 
+
+
+```
+```ps
+# Decode
+$keyboard_layout_base64string = "AAAAAAAAAAAHAAAAOAA6AB3gOAAdAFvgXOAd4B3gNgBj4F/gAAAAAA=="
+$keyboard_layout_bytearray = [convert]::FromBase64String($keyboard_layout_base64string )
+Set-Itemproperty -path 'HKLM:\\SYSTEM\CurrentControlSet\Control\Keyboard Layout' -Name 'Scancode Map' -value $keyboard_layout_bytearray
+$keyboard_layout = Get-ItemProperty -Path 'HKLM:\\SYSTEM\CurrentControlSet\Control\Keyboard Layout'
+$keyboard_layout.'Scancode Map'
+```
  
 # How to enable the F key (fkeys) in a the magic keyboard without bootcamp.
 ```
