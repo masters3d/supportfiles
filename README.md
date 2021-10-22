@@ -41,7 +41,8 @@ https://kevinbecker.org/blog/2012/09/17/reverse-scrolling-on-windows-8
 I have been using the microsoft sculpt keyboard (semi-split) for since 2019 but I have deciced to start using a completly split keyboard at the end of 2021. I have the Kinesis Freestyle 2 for mac keyboard which I use in windows. The main issues I faced with the transition is that the special keys like left control or command keys are not lighned up with the letter X. The problem with this is that I have a mental muscle memory of using the distance from the command/control key to things like cut, paste, select all, etc. After using for about a week, I decided that I need to look into a diferent way to engage the control key so I am mapping the right shit to take over this responsbility. The hope is that I dont have to move my finger to the bottom row (expect for my thumb when pressing the space bar, and even when press the directional key -- I end moving mywhole hand which is okay. ) Idealy I should be able to map the left space bar to also be control but the system can not differenciate lefrt of right space bars (the new kinesis Freestyle pro is able to do this on hardware)
 
 # Settings for Windows Sharp Keys app
-![image](https://user-images.githubusercontent.com/6539412/138482722-139063f4-cab9-48a5-9a00-957ebcd3e951.png)
+![image](https://user-images.githubusercontent.com/6539412/138493208-10bb2936-07ed-4392-8a6a-4621ee494115.png)
+
 
 I should probably look in the code for Windows Sharp Keys but in essence the app interact with the following:
 
@@ -61,7 +62,7 @@ $keyboard_layout_base64string
 ```
 ```ps
 # Decode
-$keyboard_layout_base64string = "AAAAAAAAAAAHAAAAOAA6AB3gOAAdAFvgXOAd4B3gNgBj4F/gAAAAAA=="
+$keyboard_layout_base64string = "AAAAAAAAAAAGAAAAOAA6AB3gOAAdAFvgXOAd4B3gNgAAAAAA"
 $keyboard_layout_bytearray = [convert]::FromBase64String($keyboard_layout_base64string )
 Set-Itemproperty -path 'HKLM:\\SYSTEM\CurrentControlSet\Control\Keyboard Layout' -Name 'Scancode Map' -value $keyboard_layout_bytearray
 $keyboard_layout = Get-ItemProperty -Path 'HKLM:\\SYSTEM\CurrentControlSet\Control\Keyboard Layout'
