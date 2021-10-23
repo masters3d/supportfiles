@@ -67,7 +67,7 @@ $keyboard_layout_base64string
 ```
 ```ps
 # Decode
-$keyboard_layout_base64string = "AAAAAAAAAAAGAAAAOAA6AB3gOAAdAFvgXOAd4B3gNgAAAAAA"
+$keyboard_layout_base64string = "AAAAAAAAAAAGAAAAHQA6AB3gOAAdAFvgXOAd4DjgNgAAAAAA"
 $keyboard_layout_bytearray = [convert]::FromBase64String($keyboard_layout_base64string )
 Set-Itemproperty -path 'HKLM:\\SYSTEM\CurrentControlSet\Control\Keyboard Layout' -Name 'Scancode Map' -value $keyboard_layout_bytearray
 $keyboard_layout = Get-ItemProperty -Path 'HKLM:\\SYSTEM\CurrentControlSet\Control\Keyboard Layout'
