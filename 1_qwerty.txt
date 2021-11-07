@@ -41,7 +41,7 @@
 {kp-f}>{speed9}{-lshift}{0}{+lshift}
 {kp-g}>{speed9}{'}
 [kp-lctrl]>[lshift]
-[kp-rwin]>[lwin]
+[kp-lalt]>[ralt]
 [kp-rctrl]>[lctrl]
 [kp-h]>[']
 {kp-h}>{speed9}{-lshift}{'}{+lshift}
