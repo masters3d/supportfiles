@@ -16,14 +16,14 @@
 [kp-=]>[escape]
 {kp-1}>{speed9}{-lshift}{1}{+lshift}
 {kp-2}>{speed9}{-lshift}{2}{+lshift}
-{kp-3}>{speed9}{-lshift}{2}{+lshift}
+{kp-3}>{speed9}{-lshift}{3}{+lshift}
 {kp-4}>{speed9}{-lshift}{3}{+lshift}
 {kp-5}>{speed9}{-lshift}{4}{+lshift}
 {kp-6}>{speed9}{-lshift}{5}{+lshift}
 [numlk]>[7]
 [kp=]>[8]
 [kpdiv]>[9]
-[kpmult]>[0]
+[kpmult]>[intl-\]
 [kp-hyphen]>[bspace]
 [kp-q]>[kpplus]
 [kp-w]>[kpmin]
