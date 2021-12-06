@@ -20,6 +20,10 @@
 [kp-end]>[kptoggle]
 
 # right thumb cluster column 3
+## not overritting any keys yet
+## [ralt]>[a]
+## {pup}>{d125}{-rwin}{rwin}{+rwin}{.}
+## [pdown]>[q]
 
 # right thumb cluster column 4
 [rctrl]>[bspace]
