@@ -36,8 +36,8 @@
 [kp-hyphen]>[bspace]
 {kp-q}>{speed9}{-lshift}{9}{+lshift}
 {kp-w}>{speed9}{-lshift}{0}{+lshift}
-{kp-e}>{speed9}{obrack}
-{kp-r}>{speed9}{cbrack}
+[kp-e]>[obrack]
+[kp-r]>[cbrack]
 {kp-t}>{speed9}{;}
 {kp-y}>{speed9}{-lshift}{;}{+lshift}
 [kp7]>[4]
