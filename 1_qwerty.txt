@@ -7,7 +7,7 @@
 [rctrl]>[bspace]
 {;}>{speed9}{.}
 [']>[enter]
-[bspace]>[lctrl]
+[bspace]>[lwin]
 [delete]>[kpshft]
 [,]>[up]
 {.}>{speed9}{-lshift}{\}{+lshift}
