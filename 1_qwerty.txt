@@ -67,6 +67,7 @@
 [kp-bspace]>[lwin]
 [kp-delete]>[kpshft]
 [kp-home]>[kpshft]
+[home]>[lshift]
 [kp0]>[space]
 {kp-n}>{speed9}{\}
 [kp1]>[0]
