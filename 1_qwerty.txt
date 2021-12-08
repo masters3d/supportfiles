@@ -14,16 +14,17 @@
 # left thumb cluster column 2
 [lalt]>[rwin]
 [kp-lalt]>[rwin]
-[home]>[lshift]
-[kp-home]>[kpshft]
-[end]>[kptoggle]
-[kp-end]>[kptoggle]
+[home]>[lctrl]
+[kp-home]>[lctrl]
+[end]>[lshift]
+[kp-end]>[lshift]
 
 # right thumb cluster column 3
 ## not overritting any keys yet
 ## [ralt]>[a]
 ## {pup}>{d125}{-rwin}{rwin}{+rwin}{.}
-## [pdown]>[q]
+[pdown]>[tab]
+[kp-pdown]>[tab]
 
 # right thumb cluster column 4
 [rctrl]>[bspace]
