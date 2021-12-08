@@ -1,5 +1,5 @@
 *# non sorted
-{prtscr}>{speed2}{lctrl}{lalt}{delete}
+{prtscr}>{speed2}{lctrl}{ralt}{delete}
 
 *# left thumb cluster column 0
 [bspace]>[lwin]
@@ -23,8 +23,8 @@
 [rwin]>[escape]
 [kp-rwin]>[escape]
 *# {pup}>{d125}{-rwin}{rwin}{+rwin}{.}
-[pup]>[intl-\]
-[kp-pup]>[intl-\]
+[pup]>[delete]
+[kp-pup]>[delete]
 [pdown]>[tab]
 [kp-pdown]>[tab]
 
