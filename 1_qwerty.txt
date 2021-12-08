@@ -1,5 +1,11 @@
 *# non sorted
-{prtscr}>{speed2}{lctrl}{ralt}{delete}
+{prtscr}>{speed5}{-lctrl}{-ralt}{delete}{+lctrl}{+ralt}
+
+*# pedals
+*#{lp-tab}>{speed5}{-lshift}{-rwin}{lshift}{+lshift}{s}{+rwin}
+*#{mp-kpshf}>{intl-\}
+*#{rp-kpent}>{speed5}{-rwin}{-lshift}{s}{+rwin}{+lshift}
+
 
 *# left thumb cluster column 0
 [bspace]>[lwin]
