@@ -6,23 +6,25 @@
 [kp-bspace]>[lwin]
 
 # left thumb cluster column 1
-[lctrl]>[ralt]
-[kp-lctrl]>[ralt]
-[delete]>[kpshft]
-[kp-delete]>[kpshft]
+[lctrl]>[kpshft]
+[kp-lctrl]>[kpshft]
+[delete]>[lshift]
+[kp-delete]>[lshift]
 
 # left thumb cluster column 2
 [lalt]>[rwin]
 [kp-lalt]>[rwin]
 [home]>[lctrl]
 [kp-home]>[lctrl]
-[end]>[lshift]
-[kp-end]>[lshift]
+[end]>[ralt]
+[kp-end]>[ralt]
 
 # right thumb cluster column 3
-## not overritting any keys yet
-## [ralt]>[a]
+[rwin]>[escape]
+[kp-rwin]>[escape]
 ## {pup}>{d125}{-rwin}{rwin}{+rwin}{.}
+[pup]>[intl-\]
+[kp-pup]>[intl-\]
 [pdown]>[tab]
 [kp-pdown]>[tab]
 
