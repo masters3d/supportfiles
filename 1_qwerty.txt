@@ -107,7 +107,7 @@
 [kpmult]>[0]
 
 *# right keypad row 1
-{kp-y}>{speed9}{-lshift}{;}{+lshift}
+{kp-y}>{speed9}{-lshift}{7}{+lshift}
 [kp7]>[4]
 [kp8]>[5]
 [kp9]>[6]
@@ -116,9 +116,10 @@
 *# right row 2
 *# no changes to HJKL 
 {;}>{speed9}{.}
+{lshift}{;}>{speed9}{-lshift}{;}{+lshift}
 
 *# right keypad row 2
-{kp-h}>{speed9}{-lshift}{'}{+lshift}
+{kp-h}>{speed9}{-lshift}{8}{+lshift}
 [kp4]>[1]
 [kp5]>[2]
 [kp6]>[3]
@@ -127,15 +128,17 @@
 *# right row 3
 *# no changes to NM
 [,]>[up]
-{.}>{speed9}{-lshift}{\}{+lshift}
+[.]>[']
 {/}>{speed9}{,}
+{lshift}{/}>{speed9}{;}
 
 *# right keypad row 3
-{kp-n}>{speed9}{\}
+{kp-n}>{speed9}{-lshift}{\}{+lshift}
 [kp1]>[0]
 [kp2]>[up]
-{kp3}>{speed9}{-lshift}{\}{+lshift}
+[kp3]>[']
 {kpenter1}>{speed9}{,}
+{kp-lshift}{kpenter1}>{speed9}{;}
 
 *# right keypad row 4 (only four keys)
 [kp-up]>[left]
