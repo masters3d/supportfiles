@@ -138,7 +138,7 @@
 [kp2]>[up]
 [kp3]>[']
 {kpenter1}>{speed9}{,}
-{kp-lshift}{kpenter1}>{speed9}{;}
+{lshift}{kpenter1}>{speed9}{;}
 
 *# right keypad row 4 (only four keys)
 [kp-up]>[left]
