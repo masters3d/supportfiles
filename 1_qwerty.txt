@@ -1,11 +1,10 @@
 *# non sorted
 {prtscr}>{speed5}{-lctrl}{-ralt}{delete}{+lctrl}{+ralt}
 
-*# pedals
+*# pedals. when only one pedal is attached then this is the kpshf in advantage 2
 *#{lp-tab}>{speed5}{-lshift}{-rwin}{lshift}{+lshift}{s}{+rwin}
 *#{mp-kpshf}>{intl-\}
 *#{rp-kpent}>{speed5}{-rwin}{-lshift}{s}{+rwin}{+lshift}
-
 
 *# left thumb cluster column 0
 [bspace]>[lwin]
@@ -28,7 +27,6 @@
 *# right thumb cluster column 3
 [rwin]>[escape]
 [kp-rwin]>[escape]
-*# {pup}>{d125}{-rwin}{rwin}{+rwin}{.}
 [pup]>[delete]
 [kp-pup]>[delete]
 [pdown]>[tab]
@@ -55,7 +53,6 @@
 [=]>[escape]
 [kp-=]>[escape]
 
-
 *# no changes to tab, caps, shift
 
 *# left keypad row 0
@@ -72,12 +69,14 @@
 [kp-r]>[cbrack]
 {kp-t}>{speed9}{;}
 
+
 *# left keypad row 2 
 {kp-a}>{speed9}{-lshift}{1}{+lshift}
 {kp-s}>{speed9}{-lshift}{/}{+lshift}
 {kp-d}>{speed9}{-lshift}{obrack}{+lshift}
 {kp-f}>{speed9}{-lshift}{cbrack}{+lshift}
 {kp-g}>{speed9}{'}
+
 
 *# left keypad row 3
 {kp-z}>{speed9}{-lshift}{7}{+lshift}
@@ -101,16 +100,16 @@
 
 *# right keypad row 0
 {kp-6}>{speed9}{-lshift}{6}{+lshift}
-[numlk]>[kp7]
-[kp=]>[kp8]
-[kpdiv]>[kp9]
-[kpmult]>[kp0]
+[numlk]>[7]
+[kp=]>[8]
+[kpdiv]>[9]
+[kpmult]>[0]
 
 *# right keypad row 1
 {kp-y}>{speed9}{-lshift}{7}{+lshift}
-[kp7]>[kp4]
-[kp8]>[kp5]
-[kp9]>[kp6]
+[kp7]>[4]
+[kp8]>[5]
+[kp9]>[6]
 [kpmin]>[null]
 
 *# right row 2
@@ -120,9 +119,9 @@
 
 *# right keypad row 2
 {kp-h}>{speed9}{-lshift}{8}{+lshift}
-[kp4]>[kp1]
-[kp5]>[kp2]
-[kp6]>[kp3]
+[kp4]>[1]
+[kp5]>[2]
+[kp6]>[3]
 {kpplus}>{speed9}{.}
 {lshift}{kpplus}>{speed9}{-lshift}{;}{+lshift}
 
@@ -135,7 +134,7 @@
 
 *# right keypad row 3
 {kp-n}>{speed9}{-lshift}{\}{+lshift}
-[kp1]>[kp0]
+[kp1]>[0]
 [kp2]>[up]
 [kp3]>[']
 {kpenter1}>{speed9}{,}
