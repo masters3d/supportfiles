@@ -63,26 +63,26 @@
 {kp-5}>{speed9}{-lshift}{5}{+lshift}
 
 *# left keypad row 1
-{kp-q}>{speed9}{-lshift}{9}{+lshift}
-{kp-w}>{speed9}{-lshift}{0}{+lshift}
-[kp-e]>[obrack]
-[kp-r]>[cbrack]
-{kp-t}>{speed9}{;}
+{kp-q}>{speed9}{-lshift}{,}{+lshift}
+{kp-w}>{speed9}{-lshift}{9}{+lshift}
+{kp-e}>{speed9}{obrack}
+{kp-r}>{speed9}{-lshift}{obrack}{+lshift}
+{kp-t}>{speed9}{/}
 
 
 *# left keypad row 2 
-{kp-a}>{speed9}{-lshift}{1}{+lshift}
-{kp-s}>{speed9}{-lshift}{/}{+lshift}
-{kp-d}>{speed9}{-lshift}{obrack}{+lshift}
+{kp-a}>{speed9}{-lshift}{.}{+lshift}
+{kp-s}>{speed9}{-lshift}{0}{+lshift}
+{kp-d}>{speed9}{cbrack}
 {kp-f}>{speed9}{-lshift}{cbrack}{+lshift}
-{kp-g}>{speed9}{'}
+{kp-g}>{speed9}{\}
 
 
 *# left keypad row 3
-{kp-z}>{speed9}{-lshift}{7}{+lshift}
-{kp-x}>{speed9}{-lshift}{8}{+lshift}
-{kp-c}>{speed9}{-lshift}{,}{+lshift}
-{kp-v}>{speed9}{-lshift}{.}{+lshift}
+[kp-z]>[intl-\]
+{kp-x}>{speed9}{-lshift}{`}{+lshift}
+{kp-c}>{speed9}{-lshift}{hyphen}{+lshift}
+{kp-v}>{speed9}{-lshift}{=}{+lshift}
 {kp-b}>{speed9}{-ralt}{kp0}{kp1}{kp5}{kp1}{+ralt}
 
 *# left keypad row 4 (only four keys)
