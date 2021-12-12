@@ -33,11 +33,16 @@
 [kp-pdown]>[tab]
 
 *# right thumb cluster column 4
-[rctrl]>[bspace]
-[kp-rctrl]>[bspace]
+[rctrl]>[kpshft]
+[kp-rctrl]>[kpshft]
+{lshift}{enter}>{speed9}{bspace}
+{lshift}{kp-enter}>{speed9}{bspace}
 
 *# right thumb cluster column 5
 [kp0]>[space]
+{lshift}{kp0}>{speed9}{delete}
+{lshift}{space}>{speed9}{delete}
+
 
 *# right pinkey keys
 [hyphen]>[bspace]
