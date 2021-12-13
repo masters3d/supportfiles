@@ -76,11 +76,20 @@
 
 
 *# left keypad row 2 
-{kp-a}>{speed9}{-lshift}{.}{+lshift}
-{kp-s}>{speed9}{-lshift}{0}{+lshift}
-{kp-d}>{speed9}{cbrack}
-{kp-f}>{speed9}{-lshift}{cbrack}{+lshift}
-{kp-g}>{speed9}{\}
+{kp-a}>{speed9}{-lshift}{,}{+lshift}
+{lshift}{kp-a}>{speed9}{-lshift}{.}{+lshift}
+
+{kp-s}>{speed9}{-lshift}{9}{+lshift}
+{lshift}{kp-s}>{speed9}{-lshift}{0}{+lshift}
+
+{kp-d}>{speed9}{obrack}
+{lshift}{kp-d}>{speed9}{cbrack}
+
+{kp-f}>{speed9}{-lshift}{obrack}{+lshift}
+{lshift}{kp-f}>{speed9}{-lshift}{cbrack}{+lshift}
+
+{kp-g}>{speed9}{/}
+{lshift}{kp-g}>{speed9}{\}
 
 
 *# left keypad row 3
