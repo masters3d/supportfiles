@@ -7,14 +7,14 @@
 *#{rp-kpent}>{speed5}{-rwin}{-lshift}{s}{+rwin}{+lshift}
 
 *# left thumb cluster column 0
-[bspace]>[lwin]
-[kp-bspace]>[lwin]
+[bspace]>[lshift]
+[kp-bspace]>[lshift]
 
 *# left thumb cluster column 1
 [lctrl]>[kpshft]
 [kp-lctrl]>[kpshft]
-[delete]>[lshift]
-[kp-delete]>[lshift]
+[delete]>[lwin]
+[kp-delete]>[lwin]
 
 *# left thumb cluster column 2
 [lalt]>[rwin]
@@ -35,14 +35,16 @@
 *# right thumb cluster column 4
 [rctrl]>[kpshft]
 [kp-rctrl]>[kpshft]
-{lshift}{enter}>{speed9}{bspace}
-{lshift}{kp-enter}>{speed9}{bspace}
+
+[enter]>[bspace]
+[kp-enter]>[bspace]
 
 *# right thumb cluster column 5
 [kp0]>[space]
+*[space]>[space]
+
 {lshift}{kp0}>{speed9}{delete}
 {lshift}{space}>{speed9}{delete}
-
 
 *# right pinkey keys
 [hyphen]>[bspace]
