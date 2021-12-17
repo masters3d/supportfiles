@@ -117,16 +117,16 @@
 
 *# right keypad row 0
 {kp-6}>{speed9}{-lshift}{6}{+lshift}
-[numlk]>[7]
-[kp=]>[8]
-[kpdiv]>[9]
-[kpmult]>[0]
+*[numlk]>[null]
+[kp=]>[null]
+[kpdiv]>[null]
+[kpmult]>[null]
 
 *# right keypad row 1
 {kp-y}>{speed9}{-lshift}{7}{+lshift}
-[kp7]>[4]
-[kp8]>[5]
-[kp9]>[6]
+[kp7]>[1]
+[kp8]>[2]
+[kp9]>[3]
 [kpmin]>[null]
 
 *# right row 2
@@ -136,9 +136,9 @@
 
 *# right keypad row 2
 {kp-h}>{speed9}{-lshift}{8}{+lshift}
-[kp4]>[1]
-[kp5]>[2]
-[kp6]>[3]
+[kp4]>[4]
+[kp5]>[5]
+[kp6]>[6]
 {kpplus}>{speed9}{.}
 {lshift}{kpplus}>{speed9}{-lshift}{;}{+lshift}
 
@@ -153,15 +153,15 @@
 {kp-n}>{speed9}{-lshift}{\}{+lshift}
 {lshift}{kp-n}>{speed9}{-ralt}{kp0}{kp1}{kp5}{kp1}{+ralt}
 
-[kp1]>[0]
-[kp2]>[up]
-[kp3]>[']
+[kp1]>[7]
+[kp2]>[8]
+[kp3]>[9]
 {kpenter1}>{speed9}{,}
 {lshift}{kpenter1}>{speed9}{;}
 
 *# right keypad row 4 (only four keys)
 [kp-up]>[left]
-*# no changes to down key 
+[kp-down]>[0] 
 [kp.]>[right]
 {kpenter2}>{-lshift}{/}{+lshift}
 
