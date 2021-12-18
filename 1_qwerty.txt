@@ -127,7 +127,7 @@
 [kp7]>[1]
 [kp8]>[2]
 [kp9]>[3]
-[kpmin]>[null]
+[kpmin]>[']
 
 *# right row 2
 *# no changes to HJKL 
@@ -160,9 +160,9 @@
 {lshift}{kpenter1}>{speed9}{;}
 
 *# right keypad row 4 (only four keys)
-[kp-up]>[left]
+[kp-up]>[0]
 [kp-down]>[0] 
-[kp.]>[right]
+[kp.]>[.]
 {kpenter2}>{-lshift}{/}{+lshift}
 
 *# right row 4 (only four keys)
