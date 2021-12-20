@@ -65,6 +65,11 @@
 
 *# no changes to tab, caps, shift
 
+*# Left row 0
+[2]>[`]
+[3]>[hyphen]
+[4]>[=]
+
 *# left keypad row 0
 {kp-1}>{speed9}{-lshift}{1}{+lshift}
 {kp-2}>{speed9}{-lshift}{2}{+lshift}
@@ -117,6 +122,10 @@
 [intl-\]>[`]
 [left]>[hyphen]
 [right]>[=]
+
+*# right row 0
+[7]>[obrack]
+[8]>[cbrack]
 
 *# right keypad row 0
 {kp-6}>{speed9}{-lshift}{6}{+lshift}
