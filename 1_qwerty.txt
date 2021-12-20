@@ -60,6 +60,9 @@
 [=]>[escape]
 [kp-=]>[escape]
 
+[kp-caps]>[escape]
+[caps]>[escape]
+
 *# no changes to tab, caps, shift
 
 *# left keypad row 0
