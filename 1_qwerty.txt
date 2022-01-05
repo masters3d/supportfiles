@@ -79,20 +79,17 @@
 {kp-5}>{speed9}{-lshift}{5}{+lshift}
 
 *# left keypad row 1
-*{kp-q}>{speed9}{-lshift}{,}{+lshift}
-*{kp-w}>{speed9}{-lshift}{9}{+lshift}
-
-{kp-e}>{speed9}{-lshift}{9}{+lshift}
-{lshift}{kp-e}>{speed9}{-lshift}{0}{+lshift}
-
-{kp-r}>{speed9}{/}
-{lshift}{kp-r}>{speed9}{\}
+{kp-q}>{speed9}{-lshift}{9}{+lshift}{-lshift}{0}{+lshift}{left}
+{kp-w}>{speed9}{-lshift}{,}{+lshift}{-lshift}{.}{+lshift}{left}
+{kp-e}>{speed9}{obrack}{cbrack}{left}
+{kp-r}>{speed9}{-lshift}{obrack}{+lshift}{-lshift}{cbrack}{+lshift}{left}
 
 {kp-t}>{speed9}{-lshift}{4}{+lshift}
 
 *# left keypad row 2 
 
-* a not changed
+{kp-a}>{speed9}{-lshift}{9}{+lshift}
+{lshift}{kp-a}>{speed9}{-lshift}{0}{+lshift}
 
 {kp-s}>{speed9}{-lshift}{,}{+lshift}
 {lshift}{kp-s}>{speed9}{-lshift}{.}{+lshift}
@@ -102,6 +99,7 @@
 
 {kp-f}>{speed9}{-lshift}{obrack}{+lshift}
 {lshift}{kp-f}>{speed9}{-lshift}{cbrack}{+lshift}
+
 {kp-g}>{speed9}{-lshift}{3}{+lshift}
 
 *# left keypad row 3
