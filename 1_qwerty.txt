@@ -7,11 +7,8 @@
 *#{rp-kpent}>{speed5}{-rwin}{-lshift}{s}{+rwin}{+lshift}
 
 *# left thumb cluster column 0
-*[bspace]>[lshift]
-*[kp-bspace]>[lshift]
-
-{lshift}{bspace}>{speed9}{delete}
-{lshift}{kp-bspace}>{speed9}{delete}
+[bspace]>[lshift]
+[kp-bspace]>[lshift]
 
 *# left thumb cluster column 1
 [lctrl]>[kpshft]
@@ -39,8 +36,11 @@
 [rctrl]>[kpshft]
 [kp-rctrl]>[kpshft]
 
-[enter]>[lshift]
-[kp-enter]>[lshift]
+[enter]>[bspace]
+[kp-enter]>[bspace]
+
+{lshift}{enter}>{speed9}{delete}
+{lshift}{kp-enter}>{speed9}{delete}
 
 *# right thumb cluster column 5
 [kp0]>[space]
@@ -110,17 +110,16 @@
 {kp-b}>{speed9}{-lshift}{2}{+lshift}
 
 *# left keypad row 4 (only four keys)
-{kp-`}>{speed9}{-lshift}{1}{+lshift}
-[kp-insert]>[`]
-[kp-left]>[hyphen]
-[kp-right]>[=]
+[kp-`]>[left]
+[kp-insert]>[down]
+[kp-left]>[up]
+[kp-right]>[right]
 
 *# left row 4 (only four keys)
-[`]>[1]
-{`}>{speed9}{-lshift}{1}{+lshift}
-[intl-\]>[`]
-[left]>[hyphen]
-[right]>[=]
+[`]>[left]
+[intl-\]>[down]
+[left]>[up]
+*[right]>[right]
 
 *# right row 0
 [6]>[\]
