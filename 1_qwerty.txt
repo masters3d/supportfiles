@@ -60,6 +60,9 @@
 [=]>[escape]
 [kp-=]>[escape]
 
+*# This will take a screenshot
+{lshift}{=}>{speed9}{-lshift}{-lwin}{s}{+lshift}{+lwin}
+
 [kp-caps]>[escape]
 [caps]>[escape]
 
@@ -180,6 +183,5 @@
 [up]>[left]
 *# no changes to down key
 [obrack]>[right]
-[cbrack]>[/]
-{cbrack}>{speed9}{-lshift}{/}{+lshift}
+[cbrack]>[menu]
 
