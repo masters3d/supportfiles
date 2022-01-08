@@ -61,7 +61,7 @@
 [kp-=]>[escape]
 
 *# This will take a screenshot
-{lshift}{=}>{speed9}{-lshift}{-lwin}{s}{+lshift}{+lwin}
+{lshift}{=}>{speed5}{-lshift}{-rwin}{s}{+lshift}{+rwin}
 
 [kp-caps]>[escape]
 [caps]>[escape]
