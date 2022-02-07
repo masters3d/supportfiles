@@ -158,7 +158,7 @@
 
 *# right row 3
 *# no changes to NM
-[,]>[up]
+[,]>[null]
 [.]>[']
 {/}>{speed9}{,}
 {lshift}{/}>{speed9}{;}
@@ -182,6 +182,6 @@
 *# right row 4 (only four keys)
 [up]>[left]
 *# no changes to down key
-[obrack]>[right]
-[cbrack]>[menu]
+[obrack]>[up]
+[cbrack]>[right]
 
