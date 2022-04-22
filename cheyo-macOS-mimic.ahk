@@ -49,10 +49,15 @@ SendMode Input
 
 Ctrl & Tab:: AltTab
 
-; open Windows start on search similar to the finder in mac
+; open Windows start to search similar to the finder in mac
 Ctrl & Space::
-    Send #s
-    Send {LWinDown}{LWinUp}{RWinDown}{RWinUp}{CtrlDown}{CtrlUp}{AltDown}{AltUp} ; workaround for sticky win
+    Send {RWinDown}{s}{RWinUp}
+    return
+
+; emoji shortcut
+; change on the mac to match https://apple.stackexchange.com/a/230387
+Ctrl & .::
+    Send {RWinDown}{.}{RWinUp}
     return
 
 ; Hide the program
@@ -74,9 +79,6 @@ Ctrl & q::
 
 ; This force to will delete a whole line 
 Alt & BackSpace:: Send +{Delete}
-
-
-
 
 #UseHook
 ; Save as UTF8-BOM
@@ -101,7 +103,3 @@ diacritic(map) {
 !e::diacritic("áéíóúnýÁÉÍÓÚNÝ")
 !u::diacritic("äëïöünÿÄËÏÖÜNŸ")
 !n::diacritic("ãeiõuñỹÃEIÕUÑỸ")
-
-
-
-
