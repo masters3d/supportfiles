@@ -1,3 +1,4 @@
+; https://github.com/masters3d/supportfiles/blob/master/cheyo-macOS-mimic.ahk
 ; Save as UTF8-BOM !!!!
 
 ; UTF-8 will no render the special character correctly
@@ -28,9 +29,7 @@
 
 #InstallKeybdHook
 #SingleInstance force
-SetTitleMatchMode 2
 SendMode Input
-
 
 ; Get some sticky keys unstuck
 #Escape:: 
@@ -50,34 +49,11 @@ SendMode Input
 
 Ctrl & Tab:: AltTab
 
-#If GetKeyState("Control", "D")
-Ctrl & `::
-    Send {LCtrl down}{Tab}{LCtrl up}
-    return
-
-#if
-
-#If GetKeyState("Shift", "D")
-; Tab back with special key below ESC
-Ctrl & `::Send {Shift down}{LCtrl down}{Tab}{LCtrl up}{Shift up}
-#if
-
 ; open Windows start on search similar to the finder in mac
 Ctrl & Space::
     Send #s
     Send {LWinDown}{LWinUp}{RWinDown}{RWinUp}{CtrlDown}{CtrlUp}{AltDown}{AltUp} ; workaround for sticky win
     return
-
-; emoji shortcut
-; change on the mac to match https://apple.stackexchange.com/a/230387
-Ctrl & .::
-    Send #.
-    Send {LWinDown}{LWinUp}{RWinDown}{RWinUp}{CtrlDown}{CtrlUp}{AltDown}{AltUp} ; workaround for sticky win
-    return
-
-; Win Maximize. Different from full screen.
-; I tried full screen but could not figure out how to get our of full screen so I disabled it. 
-<^>^f:: WinMaximize,a
 
 ; Hide the program
 Ctrl & h::WinMinimize,a
@@ -96,38 +72,11 @@ Ctrl & q::
     Send {CtrlDown}{CtrlUp} ; workaround for sticky control
     return
 
-; Snapshots
-; This forced both left and right controls to be pressed. 
-; This emulates the copy to pasteboard functionally of mac since I am using control as command in windows. 
-; All command + control mac shortcut get mapped to requiring left and right command.
-; This is faster than the windows 10 `win + shift + s` for some reason
-<^>^+4::Run %windir%\system32\SnippingTool.exe /clip
+; This force to will delete a whole line 
+Alt & BackSpace:: Send +{Delete}
 
-; Does not seem to work when more than 3 keys are required. So this is a hack to to force it to pick the above one
-; Plus I could not figure out a way to take a screenshot and save the screenshot to the desktop
-^+4:: return
 
-; non op when using both controls or Command + control in mac
-<^>^+3::return
 
-; Not exactly as macos since this is full screen capture in macos but close enough as it doesn't save to memory
-+^3::
-    If (WinExist("Snipping Tool"))
-    {
-        WinActivate
-        Send !{n}
-        Send {AltDown}{AltUp} ; workaround for sticky alt
-        Send {CtrlDown}{CtrlUp} ; workaround for sticky control
-    }
-    else 
-    {
-        Run %windir%\system32\SnippingTool.exe
-        WinWait,"Snipping Tool",,1
-        Send !{n}
-        Send {AltDown}{AltUp} ; workaround for sticky alt
-        Send {CtrlDown}{CtrlUp} ; workaround for sticky control  
-     }
-    return
 
 #UseHook
 ; Save as UTF8-BOM
@@ -153,31 +102,6 @@ diacritic(map) {
 !u::diacritic("äëïöünÿÄËÏÖÜNŸ")
 !n::diacritic("ãeiõuñỹÃEIÕUÑỸ")
 
-!+/:: Send ¿
-!+1:: Send ¡
-!1:: Send ¡
-
-; Reverse the direction of the scroll for all devices
-; Source https://superuser.com/a/310694/835694
-#HotkeyInterval 1000
-#MaxHotkeysPerInterval 500
-
-$WheelUp::
-;Send {WheelDown 1.5}
-Send {WheelDown}
-Return
-
-$WheelDown::
-;Send {WheelUp 1.5}
-Send {WheelUp}
-Return
 
 
-; Chéyo's Personal Preference. Due to the way the layout is in my Sculpt keyboard I am always hitting these keys in error
-; Delete::Send {BackSpace}
 
-; This force to will delete a whole line 
-Alt & BackSpace:: Send +{Delete}
-Insert::Send {Enter}
-PgDn:: Send {} ; Disable, Perhaps I could enable when I am using an external keyboard
-PgUp:: Send {} ; Disable, Bad placement on laptop. 
