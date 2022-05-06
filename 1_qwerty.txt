@@ -7,8 +7,7 @@
 *#{rp-kpent}>{speed5}{-rwin}{-lshift}{s}{+rwin}{+lshift}
 
 *# left thumb cluster column 0
-[bspace]>[lshift]
-[kp-bspace]>[lshift]
+*# are not remaped [bspace]>[kp-bspace]
 
 *# left thumb cluster column 1
 [lctrl]>[kpshft]
@@ -36,8 +35,8 @@
 [rctrl]>[kpshft]
 [kp-rctrl]>[kpshft]
 
-[enter]>[bspace]
-[kp-enter]>[bspace]
+[enter]>[lshift]
+[kp-enter]>[lshift]
 
 {lshift}{enter}>{speed9}{delete}
 {lshift}{kp-enter}>{speed9}{delete}
