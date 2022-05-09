@@ -70,13 +70,10 @@
 
 *# Left row 0
 {1}>{speed9}{-lshift}{1}{+lshift}
-{lshift}{1}>{speed9}{-lshift}{/}{+lshift}
 [2]>[`]
 [3]>[hyphen]
 [4]>[=]
 [5]>[/]
-{lshift}{5}>{speed9}{-lshift}{5}{+lshift}
-
 
 *# left keypad row 0
 {kp-1}>{speed9}{-lshift}{1}{+lshift}
