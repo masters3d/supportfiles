@@ -12,24 +12,24 @@
 *# left thumb cluster column 1
 [lctrl]>[kpshft]
 [kp-lctrl]>[kpshft]
-[delete]>[lwin]
-[kp-delete]>[lwin]
+[delete]>[lshift]
+[kp-delete]>[lshift]
 
 *# left thumb cluster column 2
-[lalt]>[rwin]
-[kp-lalt]>[rwin]
+[lalt]>[lwin]
+[kp-lalt]>[lwin]
 [home]>[lctrl]
 [kp-home]>[lctrl]
 [end]>[ralt]
 [kp-end]>[ralt]
 
 *# right thumb cluster column 3
-[rwin]>[escape]
-[kp-rwin]>[escape]
-[pup]>[delete]
-[kp-pup]>[delete]
-[pdown]>[tab]
-[kp-pdown]>[tab]
+[rwin]>[delete]
+[kp-rwin]>[delete]
+[pup]>[tab]
+[kp-pup]>[tab]
+[pdown]>[rwin]
+[kp-pdown]>[rwin]
 
 *# right thumb cluster column 4
 [rctrl]>[kpshft]
