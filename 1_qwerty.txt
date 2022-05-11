@@ -129,6 +129,10 @@
 [6]>[\]
 [7]>[obrack]
 [8]>[cbrack]
+{9}>{speed9}{-lshift}{9}{+lshift}
+{lshift}{9}>{speed9}{-lshift}{,}{+lshift}
+{0}>{speed9}{-lshift}{0}{+lshift}
+{lshift}{0}>{speed9}{-lshift}{.}{+lshift}
 
 *# right keypad row 0
 {kp-6}>{speed9}{-lshift}{6}{+lshift}
