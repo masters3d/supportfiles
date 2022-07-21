@@ -93,6 +93,16 @@ Complete instructions here: http://1428systems.com/uncategorized/making-apple-al
 
 You can also find out how to edit your settings for the track pad here: https://superuser.com/questions/172658/anyone-know-how-to-modify-settings-for-the-apple-magic-trackpad-on-windows-with
 
+## Windows Stuff
+
+check why desktop restarted 
+
+// this only shows 10 logs. 
+```
+wevtutil qe System /q:"*[System[(EventID=41) or (EventID=109) or (EventID=1074) or (EventID=6006) or (EventID=6005) or (EventID=6008)]]" /c:10 /f:text /rd:true 
+```
+https://answers.microsoft.com/en-us/windows/forum/all/the-kernel-power-manager-has-initiated-a-shutdown/4a22c353-4aa1-4359-89e0-379156b93cba
+https://www.windowscentral.com/how-find-reason-pc-shutdown-no-reason-windows-10
 
 
 # Git Settings
