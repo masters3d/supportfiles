@@ -105,6 +105,11 @@ https://answers.microsoft.com/en-us/windows/forum/all/the-kernel-power-manager-h
 https://www.windowscentral.com/how-find-reason-pc-shutdown-no-reason-windows-10
 
 
+Get a report of power stuff in an html form:
+`powercfg /systempowerreport`
+
+The html gets saved on the current directory. 
+
 # Git Settings
 This fixes the line ending so you can use the git from inside bash ubuntu in windows.
 `git config --global core.autocrlf true`
