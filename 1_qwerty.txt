@@ -69,8 +69,11 @@
 *# no changes to tab, caps, shift
 
 *# Left row 0
-{1}>{speed9}{-lshift}{1}{+lshift}
-[2]>[`]
+
+[1]>[']
+{lshift}{1}>{speed9}{`}
+{2}>{speed9}{-lshift}{'}{+lshift}
+{lshift}{2}>{speed9}{-lshift}{`}{+lshift}
 [3]>[hyphen]
 [4]>[=]
 [5]>[/]
@@ -127,6 +130,7 @@
 
 *# right row 0
 [6]>[\]
+{lshift}{6}>{speed9}{-lshift}{1}{+lshift}
 [7]>[obrack]
 [8]>[cbrack]
 {9}>{speed9}{-lshift}{9}{+lshift}
@@ -189,4 +193,3 @@
 *# no changes to down key
 [obrack]>[up]
 [cbrack]>[right]
-
