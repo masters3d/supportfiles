@@ -31,6 +31,9 @@
 #SingleInstance force
 SendMode Input
 
+XButton1::return
+XButton2::return
+
 ; Get some sticky keys unstuck
 #Escape:: 
     Send {LWinDown}{LWinUp}{RWinDown}{RWinUp} ; workaround for sticky win
