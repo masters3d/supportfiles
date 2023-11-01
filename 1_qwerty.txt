@@ -7,7 +7,8 @@
 *#{rp-kpent}>{speed5}{-rwin}{-lshift}{s}{+rwin}{+lshift}
 
 *# left thumb cluster column 0
-*# are not remaped [bspace]>[kp-bspace]
+[bspace]>[null]
+[kp-bspace]>[null]
 
 *# left thumb cluster column 1
 [lctrl]>[kpshft]
@@ -63,10 +64,13 @@
 {=}>{speed5}{-lshift}{-lwin}{s}{+lshift}{+lwin}
 {kp-=}>{speed5}{-lshift}{-lwin}{s}{+lshift}{+lwin}
 
-[kp-caps]>[escape]
-[caps]>[escape]
+[kp-caps]>[bspace]
+[caps]>[bspace]
 
-*# no changes to tab, caps, shift
+[kp-tab]>[escape]
+[tab]>[escape]
+
+*# no changes to shift
 
 *# Left row 0
 
