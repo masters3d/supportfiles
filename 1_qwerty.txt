@@ -53,8 +53,8 @@
 [kp-']>[enter]
 [\]>[null]
 [kp-\]>[null]
-[rshift]>[null]
-[kp-rshift]>[null]
+[rshift]>[F19]
+[kp-rshift]>[F19]
 
 *# left pinkey keys
 [=]>[null]
@@ -70,12 +70,12 @@
 [kp-caps]>[bspace]
 [caps]>[bspace]
 
+[lshift]>[F18]
+[kp-lshift]>[F18]
 
-[rshift]>[null]
-[kp-rshift]>[null]
-
-{rshift}>{speed5}{-lalt}{bspace}{+lalt}
-{kp-rshift}>{speed5}{-lalt}{bspace}{+lalt}
+*# Advantage does not support modifier to have macros
+*# {lshift}>{speed5}{-lalt}{bspace}{+lalt}
+*# {kp-lshift}>{speed5}{-lalt}{bspace}{+lalt}
 
 *# Left row 0
 
