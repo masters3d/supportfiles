@@ -9,6 +9,33 @@ Press and hold Command + w until the keyboard light begins blinking, indicating 
 Use Windows Bluetooth settings to pair the keyboard, entering the same code (e.g. 123456 Enter) on both ***internal and external keyboards.***  
 [Source](https://gist.github.com/mcandre/a1c6915d2e338fef6a42e54655d28062)
 
+
+## Mac Karabiner
+In cases where some "smart" keyboards are not able to provide mapping, the Karabiner app is able to provide simple simple ways to remap
+
+```json
+{
+    "description": "f18 to left_option+backspace_or_backspace",
+    "manipulators": [
+        {
+            "from": {
+                "key_code": "f18",
+                "modifiers": {}
+            },
+            "to": [
+                {
+                    "key_code": "delete_or_backspace",
+                    "modifiers": [
+                        "left_option"
+                    ]
+                }
+            ],
+            "type": "basic"
+        }
+    ]
+}
+```
+
 ## Windows Keyboard shortcuts for VSCode and Visual Studio
 - SHIFT + DELETE : Deletes the whole line. 
 - CONTROL + BACKSPACE : Deletes all characters before cursor.
